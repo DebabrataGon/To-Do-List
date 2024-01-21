@@ -17,7 +17,7 @@ submit.addEventListener("click",(e)=>{
         done.innerHTML='DONE';
         remove.innerHTML='REMOVE';
         //done.addEventListener("click",()=>{text.innerHTML='<s>${text.innerHTML}</s>';});
-        done.addEventListener("click",()=>{text.innerHTML='<s>${text.innerHTML}</s>'; displayChild.style.backgroundColor='rgb(195, 255, 193)'});
+        done.addEventListener("click",()=>{text.innerHTML=`<s>${text.innerHTML}</s>`; displayChild.style.backgroundColor='rgb(195, 255, 193)'});
         remove.addEventListener("click",()=>{display.removeChild(displayChild)});
         displayChild.appendChild(text);
         displayChild.appendChild(done);
